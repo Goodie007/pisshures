@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -12,7 +10,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,7 +20,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +33,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.form {
+  width: 50%;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.container {
+  justify-content: space-evenly;
+}
+
+
+.carousel-item {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  margin-left: 10%
+}
+
+.homeImage {
+  width: 100vw;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  position: relative;
+  object-fit: cover;
+}
+
+.section-1 {
+  font-size: 80px;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.h-1 {
+  margin-left: 25%;
+}
+
+.lorem {
+  font-size: 15px;
+}
+
+.form-2 {
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 50px;
+}
+
+.navigaiton {
+  display: inline;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  margin-left: 10%;
+  text-decoration: none;
+  direction: inline-block;
+}
+
+.nav-1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  column-gap: 1rem;
+}
+
+li {
+  text-align: center;
+  flex-direction: row;
+  padding: 14px 16px; 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.imgs {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

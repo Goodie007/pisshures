@@ -108,7 +108,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: gray;
+  background-color: #fff;
   height: 70px;
   width: 100%;
   text-align: center;
@@ -122,11 +122,14 @@ li {
   text-align: center;
   flex-direction: row;
   padding: 14px 16px; 
+  font-weight: 600;
+  color: grey;
+
 }
 
 li a {
   display: block;
-  color: white;
+  color: grey;
   text-align: center;
   /* padding: 14px 16px; */
   text-decoration: none;
@@ -134,11 +137,69 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #fff;
+  border-bottom: 2px;
+  border-bottom-color: #0062be;
 }
 
 .imgs {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.home-row {
+  padding-top: 25px;
+  margin-left: -10.5%;
+  margin-right: -7%;
+}
+
+.exp-row {
+  padding-top: 25px;
+  margin-left: -10.5%;
+  margin-right: -7%;
+}
+
+.explore {
+  margin-left: 3%;
+}
+
+.exp-h2 {
+  padding-top: 8%;
+}
+
+.exp-h3 {
+  padding-top: 2%;
+}
+
+.exp-row {
+  padding-top: 25px;
+  margin-left: -10.5%;
+  margin-right: -7%;
+}
+
+.exp-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.category {
+  margin-left: 3%;
+}
+
+.nature {
+  padding-top: 2%;
+}
+
+.cat-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.cat-row {
+  padding-top: 25px;
+  margin-left: -10.5%;
+  margin-right: -7%;
 }

@@ -4,9 +4,14 @@ import { Container, Nav, NavDropdown, Navbar,
   FormControl, Image,
   Col, Row
 } from 'react-bootstrap';
+import {BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Header from '../Navbar/Navbar';
+import TopNav from '../Navbar/TopNav';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaHeart } from "react-icons/fa";
+
+
 import '../App.css';
 
 
@@ -43,24 +48,7 @@ function HomePage() {
   return (
     <div className="top">
         <div>
-          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" styles={{height: '100px'}}>
-            <Container className="container">
-             <Navbar.Brand href="#home">R EReact</Navbar.Brand>
-             <InputGroup>
-                  <FormControl  placeholder="search for pictures" className="form" />
-             </InputGroup>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className="me-auto">
-                       <Nav.Link href="#pricing"> Explore</Nav.Link>
-                       <Nav.Link href="blog">Blog</Nav.Link>
-                       <Nav.Link href="#deets">Login</Nav.Link>
-                       <Nav.Link href="#d">Advertise</Nav.Link>
-                       <Button>Submit</Button>
-                  </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
+          <TopNav />
         </div>
              
 
@@ -79,14 +67,9 @@ function HomePage() {
           </div>
         </div>
         <div>
-          <nav className='navigation'>
-            <ul className="nav-1">
-              <li>Home</li>
-              <li>Explore</li>
-            </ul>
-          </nav>
+          <Header />
           <Container>
-            <Row className="row">
+            <Row className="home-row">
               <Col>
                 {images1.map((e) => {
                     return (

@@ -186,20 +186,86 @@ li a:hover {
 
 .category {
   margin-left: 3%;
+  padding-top: 5%;
+}
+
+.cat-h3 {
+  margin-left: 5%;
+}
+
+.cat-row-img {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.d-nature {
+  padding-top: 10%;
 }
 
 .nature {
   padding-top: 2%;
+  margin-left: 5%;
+}
+
+.status {
+  border: 1px solid black;
+  border-radius: 3px;
+  border-color: #e8e7e3;
+  justify-content: center;
+  align-items: center;
+}
+
+.nat-stat {
+  margin-left: 15px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.n-div {
+  margin-left: 60%;
+}
+
+hr {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .cat-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 5px;
 }
 
 .cat-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  margin-left: -5%;
+  margin-right: -2%;
+}
+
+.nat-row {
+  padding-top: 100px;
+  margin-left: -5%;
+  margin-right: -2%;
+}
+
+.nat-row1 {
+  margin-left: -5%;
+  margin-right: -2%;
+}
+
+.button {
+  padding-top: 3%;
+}
+
+.butn {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0062be;
+  color: #fff;
 }

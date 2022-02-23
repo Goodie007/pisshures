@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch , Routes} from 'react-router-dom';
 import './App.css';
 import HomePage from './components/HomePage';
 import Explore from './Screens/Explore';
@@ -13,11 +13,12 @@ import Foods from './Screens/Foods';
 import Fashion from './Screens/Fashion';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import ModalScreen from './components/ModalScreen';
 
 function App() {
   return (
     <div className="App">
-       <BrowserRouter>
+       {/* <Router>
          <Routes>
            <Route index element={<HomePage />} />
            <Route path="explore" element={<Explore />} />
@@ -31,10 +32,11 @@ function App() {
            <Route path="login" element={<Login />} />
            <Route path="signup" element={<Signup />} />
          </Routes>
-      </BrowserRouter> 
-      <HomePage />
+      </Router>   */}
+       {/* <HomePage />  */}
        {/* <Login />  */}
       {/* <Signup /> */}
+      <ModalScreen />
     </div>
   );
 }

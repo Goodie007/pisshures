@@ -53,7 +53,7 @@ function Login() {
                     </Button>
                 </div>
                <Form.Text className="text">
-                   don't have an account? <Link to="Signup">Join</Link>
+                   don't have an account? <Link to="/Signup">Join</Link>
                 </Form.Text>
                </Form>
             </div>

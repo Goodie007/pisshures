@@ -1,5 +1,5 @@
 import React from  'react';
-import {Col, Container, Row} from 'react-bootstrap';
+import {Col, Container, Row, Button} from 'react-bootstrap';
 
 import Header from '../Navbar/Navbar';
 import TopNav from '../Navbar/TopNav';
@@ -74,7 +74,7 @@ function Fashion() {
                            </div>
                           </div>
                            <div className="button">
-                             <button className="butn">submit to ...</button>
+                             <Button className="butn">submit to Fashion</Button>
                            </div>
                           
                         </Col>

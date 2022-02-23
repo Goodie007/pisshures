@@ -35,6 +35,10 @@
   }
 }
 
+.top {
+  width: 100vw;
+}
+
 
 .form {
   width: 50%;

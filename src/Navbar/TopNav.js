@@ -5,6 +5,7 @@ import { Container, Nav, NavDropdown, Navbar,
     FormControl, Image,
     Col, Row
   } from 'react-bootstrap';
+  import { Link } from 'react-router-dom';
 import '../App.css';
 
 
@@ -22,7 +23,9 @@ function TopNav() {
                   <Nav className="me-auto">
                        <Nav.Link to="Explore"> Explore</Nav.Link>
                        <Nav.Link href="blog">Blog</Nav.Link>
-                       <Nav.Link href="#deets">Login</Nav.Link>
+                       <Nav.Link>
+                          <Link to="/Login">Login</Link>
+                       </Nav.Link>
                        <Nav.Link href="#d">Advertise</Nav.Link>
                        <Button>Submit</Button>
                   </Nav>

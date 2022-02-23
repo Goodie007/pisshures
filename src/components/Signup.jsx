@@ -1,18 +1,18 @@
 import React from 'react';
 import {Button, InputGroup, Form, 
   FormControl,} from 'react-bootstrap';
-  import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 import '../App.css';
 
 
 
 
-function Login() {
+function Signup() {
     return (
         <div className="log-top">
            <div className="log">
-             <h1>Login</h1>
+             <h1>Sign Up</h1>
             </div>
             <div className="btn-top">
             <div className="d-grid gap-2">
@@ -40,7 +40,7 @@ function Login() {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                       <Form.Text className="muted">
-                         forgot password? <a href="#">click here</a>
+                         forgot password? 
                      </Form.Text>
                     <Form.Control type="password" placeholder="Password" className="formCntrl" />
                </Form.Group>
@@ -53,7 +53,7 @@ function Login() {
                     </Button>
                 </div>
                <Form.Text className="text">
-                   don't have an account? <Link to="Signup">Join</Link>
+                   already have an account? <Link to="/Login">Login</Link>
                 </Form.Text>
                </Form>
             </div>
@@ -62,4 +62,4 @@ function Login() {
 }
 
 
-export default Login;
+export default Signup;

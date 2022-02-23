@@ -12,11 +12,12 @@ import History from './Screens/History';
 import Foods from './Screens/Foods';
 import Fashion from './Screens/Fashion';
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+       <BrowserRouter>
          <Routes>
            <Route index element={<HomePage />} />
            <Route path="explore" element={<Explore />} />
@@ -27,10 +28,13 @@ function App() {
            <Route path="history" element={<History />} />
            <Route path="foods" element={<Foods />} />
            <Route path="fashion" element={<Fashion />} />
+           <Route path="login" element={<Login />} />
+           <Route path="signup" element={<Signup />} />
          </Routes>
-      </BrowserRouter> */}
-      {/* <HomePage /> */}
-      <Login />
+      </BrowserRouter> 
+      <HomePage />
+       {/* <Login />  */}
+      {/* <Signup /> */}
     </div>
   );
 }

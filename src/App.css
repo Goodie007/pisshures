@@ -269,3 +269,39 @@ hr {
   background-color: #0062be;
   color: #fff;
 }
+
+.log-top {
+  padding-top: 5%;
+}
+
+.log {
+  text-align: center;
+}
+
+.btn-top {
+
+}
+
+.logP {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.mb-3 {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.d-grid {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.text {
+  margin-left: 40%;
+}
+
+.muted {
+  margin-left: 55%;
+}

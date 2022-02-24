@@ -1,38 +1,40 @@
 import React from 'react';
-// import {Link } from 'react-router-dom';
-import { Container, Nav, NavDropdown, Navbar, 
-    Button, InputGroup, 
-    FormControl, Image,
-    Col, Row
-  } from 'react-bootstrap';
-  import { Link } from 'react-router-dom';
-import '../App.css';
+import { Container, Navbar , NavDropdown, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
 function TopNav() {
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" styles={{height: '100px'}}>
-            <Container className="container">
-             <Navbar.Brand href="#home">R EReact</Navbar.Brand>
-             <InputGroup>
-                  <FormControl  placeholder="search for pictures" className="form" />
-             </InputGroup>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className="me-auto">
-                       <Nav.Link to="Explore"> Explore</Nav.Link>
-                       <Nav.Link href="blog">Blog</Nav.Link>
-                       <Nav.Link>
-                          <Link to="/Login">Login</Link>
-                       </Nav.Link>
-                       <Nav.Link href="#d">Advertise</Nav.Link>
-                       <Button>Submit</Button>
-                  </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-    )
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" style={{height: "70px"}}>
+  <Container>
+  <Navbar.Brand href="#home">Brand</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link href="#features">Explore</Nav.Link>
+      <Nav.Link href="#pricing">Advertise</Nav.Link>
+      <Nav.Link href="#">Blog</Nav.Link>
+      <NavDropdown title="More" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Join the Team</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Contact Us</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">License</NavDropdown.Item>
+      </NavDropdown> 
+    </Nav>
+    <Nav>
+      <Nav.Link as={Link} to="/Login">
+        <Button className="btn-1">Login</Button>
+      </Nav.Link>
+      <Nav.Link href="#deets">
+        <Button className="btn-2">Submit a photo</Button>
+      </Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
+  )
 }
 
 export default TopNav;

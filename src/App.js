@@ -13,12 +13,12 @@ import Foods from './Screens/Foods';
 import Fashion from './Screens/Fashion';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import ModalScreen from './components/ModalScreen';
+// import ModalScreen from './components/ModalScreen';
 
 function App() {
   return (
     <div className="App">
-       {/* <Router>
+      <Router>
          <Routes>
            <Route index element={<HomePage />} />
            <Route path="explore" element={<Explore />} />
@@ -32,11 +32,11 @@ function App() {
            <Route path="login" element={<Login />} />
            <Route path="signup" element={<Signup />} />
          </Routes>
-      </Router>   */}
+      </Router>   
        {/* <HomePage />  */}
        {/* <Login />  */}
       {/* <Signup /> */}
-      <ModalScreen />
+      {/* <ModalScreen /> */}
     </div>
   );
 }

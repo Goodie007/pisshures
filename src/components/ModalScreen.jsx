@@ -21,7 +21,7 @@ const ModalScreen = () => {
           hendrerit risus, sed porttitor quam.
         </p>
         <div>
-          <Login />
+          <Login className="login" />
         </div>
       </Modal>
     </div>

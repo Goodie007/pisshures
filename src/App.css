@@ -62,17 +62,6 @@
   padding-left: 250px;
 }
 
-@media only screen and (max-width: 768px) {
-  #responsive-navbar-nav {
-    padding-left: unset;
-    background-color: #000;
-    text-align: right;
-    width: 60%;
-    padding-right: 45px;
-
-  }
-}
-
 .btn-1 {
   background-color: transparent;
   border-color: transparent;
@@ -80,6 +69,23 @@
 
 .btn-2 {
   border-color: #fff;
+  display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }
 
 .top {
@@ -114,7 +120,7 @@
   background-size: cover;
   display: grid;
   place-items: center;
-  position: relative;
+  /* position: relative; */
   object-fit: cover;
 }
 
@@ -131,30 +137,36 @@
 }
 
 .h-1 {
-  margin-left: 25%;
+  padding-left: 25%;
+  
 }
 
 .lorem {
   font-size: 15px;
 }
 
+.lorem-2 {
+  display: none;
+}
+
 .form-2 {
-  margin-left: 25%;
-  margin-right: 25%;
+  padding-left: 25%;
+  padding-right: 25%;
   height: 50px;
 }
 
-.navigaiton {
+.navigaton {
   display: inline;
   flex-direction: row;
   height: 50px;
   width: 100%;
-  margin-left: 10%;
+  padding-left: 10%;
   text-decoration: none;
   direction: inline-block;
 }
 
 .nav-1 {
+  margin-top: 50px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -201,18 +213,18 @@ li a:hover {
 
 .home-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  padding-left: -10.5%;
+  padding-right: -7%;
 }
 
 .exp-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  padding-left: -10.5%;
+  padding-right: -7%;
 }
 
 .explore {
-  margin-left: 3%;
+  padding-left: 3%;
 }
 
 .exp-h2 {
@@ -225,8 +237,8 @@ li a:hover {
 
 .exp-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  padding-left: -10.5%;
+  padding-right: -7%;
 }
 
 .exp-img {
@@ -362,7 +374,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   
   
   .spn {
@@ -436,7 +448,7 @@ hr {
     color: #4711dd;
   } */
   
-  .first {
+  /* .first {
     margin-right: auto;
     color: #164e63;
   }
@@ -463,4 +475,78 @@ hr {
     display: none;
   }
 
+} */ 
+
+
+@media only screen and (max-width: 400px) {
+  .h-1 {
+    padding-left: 5%;
+  }
+  .lorem {
+    font-size: 10px;
+  }
+
+  .form-2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #responsive-navbar-nav {
+    padding-left: unset;
+    background-color: #343a40;
+    text-align: right;
+    width: 60%;
+    padding-right: 45px;
+    z-index: 1050;
+
+  }
+
+  .h-1 {
+    padding-left: 5%;
+  }
+
+  .lorem {
+    font-size: 10px;
+    
+  }
+
+  .form-2 {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* .lorem-2 {
+    display: block;
+    font-size: 9px;
+  } */
+
+  .navigaton {
+    display: inline;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    margin-left: 10%;
+    text-decoration: none;
+    direction: inline-block;
+  }
+  
+  .nav-1 {
+    margin-top: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 1rem;
+  }
 }

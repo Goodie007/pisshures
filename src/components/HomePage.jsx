@@ -5,7 +5,7 @@ import { Container, Nav, NavDropdown, Navbar,
   Col, Row
 } from 'react-bootstrap';
 import {BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Header from '../Navbar/Navbar';
+import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

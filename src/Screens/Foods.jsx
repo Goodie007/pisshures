@@ -1,7 +1,7 @@
 import React from  'react';
 import {Col, Container, Row, Button} from 'react-bootstrap';
 
-import Header from '../Navbar/Navbar';
+import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
 import '../App.css';
 

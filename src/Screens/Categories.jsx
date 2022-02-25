@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { Container, Row, Col, Image} from 'react-bootstrap';
-import Header from '../Navbar/Navbar';
+import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
 
 import '../App.css';
@@ -11,7 +11,7 @@ import '../App.css';
 function Categories() {
     return (
         <div>
-            <TopNav />
+            <TopNav /> 
             <Header />
             <div className="category">
                <h3 className="cat-h3">Categories</h3>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Container, Row, Col, Image} from 'react-bootstrap';
 import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
@@ -54,13 +54,13 @@ function Explore() {
                    <Container>
                       <Row className="exp-row">
                         <Col>
-                          <Image src={require("../assets/sunset.jpg")} className="exp-img" />
+                          <Image src={require("../assets/sunset.jpg")} className="exp-img" alt="explore1" />
                         </Col>
                         <Col>
-                          <Image src={require("../assets/sunset.jpg")} className="exp-img" />
+                          <Image src={require("../assets/sunset.jpg")} className="exp-img" alt="explore2" />
                         </Col>
                         <Col>
-                          <Image src={require("../assets/sunset.jpg")} className="exp-img" />
+                          <Image src={require("../assets/sunset.jpg")} className="exp-img" alt="explore3" />
                         </Col>
                      </Row>
                    </Container>
@@ -70,7 +70,7 @@ function Explore() {
                           <Col>
                            {images1.map((e) => {
                               return (
-                                  <img src={e.url} className="imgs"/>
+                                  <img src={e.url} className="imgs" alt="explore-1" />
                                );
                               }
                              )
@@ -79,14 +79,14 @@ function Explore() {
                           <Col>
                             {images2.map((e) => {
                                  return (
-                                     <img src={e.url} className="imgs" />
+                                     <img src={e.url} className="imgs" alt="explore-2" />
                                   );
                              })},
                          </Col>
                          <Col>
                              {images3.map((e) => {
                                  return (
-                                      <img src={e.url} className="imgs" />
+                                      <img src={e.url} className="imgs" alt="explore-3" />
                                  )
                                })}
                            </Col>

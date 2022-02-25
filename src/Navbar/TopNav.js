@@ -16,7 +16,7 @@ function TopNav() {
              <Nav className="me-auto">
               <Nav.Link href="#features">Explore</Nav.Link>
               <Nav.Link href="#pricing">Advertise</Nav.Link>
-              <Nav.Link href="#">Blog</Nav.Link>
+              <Nav.Link href="#Blog">Blog</Nav.Link>
               <NavDropdown title="More" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Join the Team</NavDropdown.Item>

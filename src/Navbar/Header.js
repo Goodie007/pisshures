@@ -18,8 +18,8 @@ function Header(){
               <li>
                   <Link to="/Categories">Categories</Link>
               </li>
-              <li><a href="#">Top Raters</a></li>
-              <li><a href="#">Tasks</a></li>
+              <li><a href="#TopRaters">Top Raters</a></li>
+              <li><a href="#Task">Tasks</a></li>
             </ul>
           </nav>
     )

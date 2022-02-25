@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, InputGroup, Form, 
-  FormControl,} from 'react-bootstrap';
+import {Button, Form } from 'react-bootstrap';
   import { Link } from 'react-router-dom';
 
 import '../App.css';
@@ -40,7 +39,7 @@ function Login() {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                       <Form.Text className="muted">
-                         forgot password? <a href="#">click here</a>
+                         forgot password? <a href="#Password">click here</a>
                      </Form.Text>
                     <Form.Control type="password" placeholder="Password" className="formCntrl" />
                </Form.Group>

@@ -1,5 +1,6 @@
 import React from  'react';
 import {Col, Container, Row, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
@@ -12,20 +13,15 @@ const images1 = [
     {url: "https://images.unsplash.com/photo-1645518005679-50c3b9e15cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1645475798187-90878451b7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1645466525466-647ef246067f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=602"},
-    {url: "https://images.unsplash.com/photo-1645474906518-6542b42f9bef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"}
+    {url: "https://images.unsplash.com/photo-1645474906518-6542b42f9bef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
     
-  ]
-  
-  const images2 = [
     {url: "https://images.unsplash.com/photo-1645334710996-0d59a16768e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1533516006399-ae967e376f67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1637710527019-b43708c651df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1641667599829-0b6d0c92581c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1644048778858-e6b0cf246a10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
-    {url: "https://images.unsplash.com/photo-1643235714999-df95fa472e39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"}
-  ]
+    {url: "https://images.unsplash.com/photo-1643235714999-df95fa472e39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
   
-  const images3 = [
     {url: "https://images.unsplash.com/photo-1448988301245-000401bb1ee7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1642411765685-e291ac9b96f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
     {url: "https://images.unsplash.com/photo-1642411765685-e291ac9b96f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"},
@@ -45,13 +41,13 @@ function Foods() {
             <div className="d-nature">
                 <Container>
                     <Row className="nat-row1">
-                        <Col>
+                        <Col md={4} sm={6} xs={12}>
                            <h1>Foods and Drinks </h1>
                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sit,<br /> 
                                dignissimos quam est, ad soluta neque, alias magni ducimus voluptates modi <br />
                                accusantium assumenda? Molestias maiores ea placeat expedita sit quas.</p>
                         </Col>
-                        <Col>
+                        <Col md={4} sm={6} xs={12}>
                            <div className="status">
                            <div className="nat-stat">
                               <label>Status</label>
@@ -74,7 +70,9 @@ function Foods() {
                            </div>
                           </div>
                            <div className="button">
-                             <Button className="butn">submit to Foods</Button>
+                            <Button as={Link} to="/Login" className="butn">
+                               Submit to Foods and Drinks
+                             </Button>
                            </div>
                         </Col>
                     </Row>
@@ -83,26 +81,26 @@ function Foods() {
                 <div>
                     <Container>
                         <Row className="nat-row">
-                            <Col>
+                            <Col md={4} sm={6} xs={6}>
                               {images1.map((e) => {
                                  return (
-                                    <img src={e.url} className="imgs"/>
+                                    <img src={e.url} className="imgs" alt="fodd1" />
                                    );
                                  }
                                 )
                                },
                             </Col>
-                            <Col>
-                              {images2.map((e) => {
+                            <Col md={4} sm={6} xs={6}>
+                              {images1.map((e) => {
                                 return (
-                                   <img src={e.url} className="imgs" />
+                                   <img src={e.url} className="imgs" alt="food2" />
                                 );
                               })},
                             </Col>
-                            <Col>
-                              {images3.map((e) => {
+                            <Col md={4} sm={6} xs={6}>
+                              {images1.map((e) => {
                                  return (
-                                    <img src={e.url} className="imgs" />
+                                    <img src={e.url} className="imgs" alt="food3" />
                                 )
                                })}
                             </Col>

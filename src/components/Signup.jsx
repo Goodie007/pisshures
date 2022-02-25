@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, InputGroup, Form, 
-  FormControl,} from 'react-bootstrap';
+import {Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 
 import '../App.css';

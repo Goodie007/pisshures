@@ -38,9 +38,9 @@ function Signup() {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                      <Form.Text className="muted">
+                      {/* <Form.Text className="muted">
                          forgot password? 
-                     </Form.Text>
+                     </Form.Text> */}
                     <Form.Control type="password" placeholder="Password" className="formCntrl" />
                </Form.Group>
                <Form.Group className="mb-3" controlId="formBasicCheckbox">

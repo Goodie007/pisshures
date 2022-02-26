@@ -15,10 +15,10 @@ function Login() {
             </div>
             <div className="btn-top">
             <div className="d-grid gap-2">
-               <Button variant="primary" size="lg">
+               <Button variant="primary" size="lg" className="loginBtn">
                      sign in with facebook
                </Button>
-               <Button variant="secondary" size="lg">
+               <Button variant="secondary" size="lg" className="loginBtn">
                    sign in with google
                </Button>
             </div>
@@ -47,7 +47,7 @@ function Login() {
                   {/* <Form.Check type="checkbox" label="Check me out" /> */}
                </Form.Group>
                <div className="d-grid gap-2">
-                     <Button variant="primary" type="submit">
+                     <Button variant="primary" type="submit" className="loginBtn">
                          Submit
                     </Button>
                 </div>

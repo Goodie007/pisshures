@@ -141,6 +141,10 @@
   
 }
 
+.sticky {
+  z-index: 1000;
+}
+
 .lorem {
   font-size: 15px;
 }
@@ -430,108 +434,6 @@ hr {
 }
 
 
-/* @media only screen and (max-width: 400px) {
-  
-  
-  .spn {
-    text-decoration: none;
-    text-decoration-line: none;
-    color: white;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
-  .logoName {
-    color: white;
-    text-decoration: none;
-    margin-left: 0px;
-  }
-  
-  .logo {
-    color: white;
-    margin-left: 20px;
-    height: 54px;
-    width: 54px;
-  }
-  
-  .btn {
-    height: 40px;
-    width: 100px;
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: white;
-    background-color: #0F172A;
-    margin-right: 2px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn:hover{
-    background-color: #198754;
-    border-color: #198754;
-  }
-  
-  .me-auto {
-    
-    margin-left: 100px;
-    background-color: white;
-    margin-right: auto;
-    margin-top: 10px;
-    padding: 20px;
-    padding-top: 10px;
-    color: white;
-    border-radius: 7px;
-    display: none;
-    
-  }
-
-  .mobile-auto {
-    display: block;
-    background-color: #164e63;
-    text-align: center;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    float: right;
-    color: #164e63; 
-    padding-top: 10%;
-  }
-  /* .mobile-auto:hover {
-    color: #4711dd;
-  } */
-  
-  /* .first {
-    margin-right: auto;
-    color: #164e63;
-  }
-
-  .first:hover {
-    color: blue;
-  }
-  
-  
-  
-  .third {
-    margin: auto;
-  }
-  
-  .fourth {
-    margin-right: auto;
-  }
-  
-  .lapScreen {
-    display: block;
-  }
-  
-  .myMobile {
-    display: none;
-  }
-
-} */ 
 
 
 @media only screen and (max-width: 400px) {
@@ -564,6 +466,10 @@ hr {
     padding-left: 5%;
   }
 
+  .sticky {
+    z-index: 1000;
+  }
+
   .lorem {
     font-size: 10px;
     
@@ -581,11 +487,11 @@ hr {
   } */
 
   .navigaton {
-    display: inline;
+    display: block;
     flex-direction: row;
     height: 50px;
     width: 100%;
-    margin-left: 10%;
+    margin-left: 0;
     text-decoration: none;
     direction: inline-block;
   }
@@ -595,7 +501,7 @@ hr {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow-x: auto;
     background-color: #fff;
     height: 70px;
     width: 100%;
@@ -603,7 +509,9 @@ hr {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: row;
     column-gap: 1rem;
+    white-space: nowrap;
   }
 
   .cat-menu {
@@ -611,7 +519,7 @@ hr {
     flex-direction: row;
     height: 50px;
     width: 100%;
-    padding-left: 0;
+    margin-left: 0;
     text-decoration: none;
     direction: inline-block;
   }
@@ -621,7 +529,7 @@ hr {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow-x: auto;
     background-color: transparent;
     height: 70px;
     width: 100%;
@@ -629,6 +537,89 @@ hr {
     align-items: center;
     justify-content: center;
     display: flex;
-    column-gap: 1rem;
+    /* column-gap: 1rem; */
+  }
+
+  .log-top {
+    padding-top: 5%;
+  }
+  
+  .log {
+    text-align: center;
+  }
+  
+  /* .btn-top {
+  
+  } */
+  
+  .logP {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .mb-3 {
+    width: 40%;
+    margin-left: 30%;
+  }
+  
+  .d-grid {
+    width: 40%;
+    margin-left: 30%;
+  }
+  
+  .text {
+    margin-left: 40%;
+  }
+  
+  .muted {
+    margin-left: 55%;
+  }
+  
+  .login {
+    width: 100px;
+  }
+
+  /* .loginBtn {
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #0062be;
+    border: 1px solid #7d8185;
+    padding: 0.37rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  } */
+
+  .mb-3 {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  .d-grid {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  .text {
+    margin-left: 23%;
+  }
+  
+  .muted {
+    margin-left: 9%;
+    font-size: 11px;
+  }
+  
+  .login {
+    width: 100px;
   }
 }

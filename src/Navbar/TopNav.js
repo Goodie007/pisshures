@@ -7,7 +7,7 @@ import  Sticky  from  "react-sticky-el";
 
 function TopNav() {
   return (
-    <Sticky>
+    <Sticky stickyStyle={{zIndex: "1000"}}>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  style={{height: "70px"}} className="sticky">
        <Container>
          <Navbar.Brand as={Link} to="/">Brand</Navbar.Brand>
@@ -29,7 +29,7 @@ function TopNav() {
             <Nav.Link as={Link} to="/Login">
              <Button className="btn-1">Login</Button>
             </Nav.Link>
-            <Nav.Link as={Link} to="/Login">
+            <Nav.Link as={Link} to="/Login" className="test">
              <Button className="btn-2">Submit a photo</Button>
            </Nav.Link>
          </Nav>

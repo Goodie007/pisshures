@@ -6,6 +6,7 @@ import { Container, InputGroup,
 import Header from '../Navbar/Header';
 import TopNav from '../Navbar/TopNav';
 import "react-multi-carousel/lib/styles.css";
+import { FaSearch } from 'react-icons/fa';
 
 
 
@@ -46,15 +47,17 @@ function HomePage() {
              
 
       <div>
-        <div>
-          <Image src={require("../assets/sunset.jpg")} className="homeImage" alt="bgImg" />
+        <div className="background">
           <div className="section-1">
             <div className='h-1'>
               <h1>Resolution</h1>
               <p className="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi distinctio sequi omnis adipisci.</p>
             </div>
-                <InputGroup>
-                  <FormControl  placeholder="search for pictures" className="form-2" />
+                <InputGroup className="searchOrder">
+                  <FormControl  placeholder="search for pictures" 
+                     className="form-2"
+                      />
+                     <i class='fas fa-search'></i>
                </InputGroup>
             </div>
           </div>

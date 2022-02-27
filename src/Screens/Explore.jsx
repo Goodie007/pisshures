@@ -55,15 +55,15 @@ function Explore() {
                         <Col md={4} sm={6} xs={6}>
                           <Image src={require("../assets/sunset.jpg")} className="exp-img" alt="explore1" />
                         </Col>
-                        <Col  md={4} sm={6} xs={6}>
+                        <Col  md={4} sm={6} xs={6} className="exp-col-3">
                           <Image src={require("../assets/sunset.jpg")} className="exp-img" alt="explore1" />
-                        </Col>
+                        </Col> 
                      </Row>
                    </Container>
-                   <h3 className="exp-h3">Free high resolution pictures</h3>
+                       <h3 className="exp-h3">Free high resolution pictures</h3>
                    <Container>
                        <Row className="exp-row">
-                          <Col md={4} sm={6} xs={6}>
+                          <Col md={4} sm={6} xs={4}>
                            {images1.map((e) => {
                               return (
                                   <img src={e.url} className="imgs" alt="explore-1" />

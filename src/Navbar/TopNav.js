@@ -8,7 +8,7 @@ import  Sticky  from  "react-sticky-el";
 function TopNav() {
   return (
     <Sticky stickyStyle={{zIndex: "1000"}}>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  style={{height: "70px"}} className="sticky">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  style={{height: "5s0px"}} className="sticky">
        <Container>
          <Navbar.Brand as={Link} to="/">Brand</Navbar.Brand>
            <Navbar.Toggle aria-controls="responsive-navbar-nav" />

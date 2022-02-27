@@ -57,15 +57,27 @@ function Categories() {
                            <Col>
                               <Link to="/Nature"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="naturee" /></Link>
                             </Col>
+                            <Col class="cat-col-1">
+                              <Link to="/Nature"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="naturee" /></Link>
+                            </Col>
+                            <Col class="cat-col-1">
+                              <Link to="/Nature"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="naturee" /></Link>
+                            </Col>
                        </Row>
                    </Container>
                </div>
                <div>
-                  <h4 className="nature">Popular Pictures</h4>
+                  <h4 className="nature-1">Popular Pictures</h4>
                   <Container>
                      <Row className="cat-row">
                         <Col>
                            <Link to="/Foods"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="foodss" /></Link>
+                        </Col>
+                        <Col className="cat-col">
+                           <Link to="/Foods"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="naturee" /></Link>
+                        </Col>
+                        <Col className="cat-col">
+                           <Link to="/Foods"><Image src={require("../assets/sunset.jpg")} className="cat-img" alt="naturee" /></Link>
                         </Col>
                      </Row>
                   </Container>

@@ -88,6 +88,20 @@
 
 }
 
+.search {
+  height: 20px;
+  width: 20px;
+  padding-top: 3px;
+  color: white;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: end;
+  
+
+}
+
 .top {
   width: 100vw;
 }
@@ -129,7 +143,7 @@
   background-size: cover; 
   background-repeat: no-repeat;
   /* object-fit:contain; */
-  height: 75vh;
+  height: 65vh;
   width: 100vw;
 }
 
@@ -290,8 +304,8 @@ li a:hover {
 
 .exp-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  /* padding-left: -10.5%;
+  padding-right: -7%; */
 }
 
 .explore {
@@ -303,13 +317,14 @@ li a:hover {
 }
 
 .exp-h3 {
-  padding-top: 2%;
+  padding-top: 5%;
+  margin-left: 0;
 }
 
 .exp-row {
   padding-top: 25px;
-  margin-left: -10.5%;
-  margin-right: -7%;
+  margin-left: -8.5%;
+  margin-right: -5%;
 }
 
 .exp-img {
@@ -341,6 +356,11 @@ li a:hover {
 .nature {
   padding-top: 2%;
   margin-left: 5%;
+}
+
+.nature-1 {
+  padding-top: 5%;
+  margin-left: 2%;
 }
 
 .status {
@@ -489,6 +509,10 @@ hr {
     
   }
 
+  .head-2 {
+    padding-top: -20%;
+  }
+
   .form-2 {
     width: 60%;
     margin-left: 5%;
@@ -505,6 +529,10 @@ hr {
     right: 0;
     height: fit-content;
     margin: auto;
+  }
+
+  .background {
+    height: 67vh;
   }
 
   /* .lorem-2 {
@@ -540,6 +568,10 @@ hr {
     white-space: nowrap;
   }
 
+  .exp-col-3 {
+    display: none;
+  }
+
   .cat-menu {
     display: inline;
     flex-direction: row;
@@ -564,6 +596,14 @@ hr {
     justify-content: center;
     display: flex;
     /* column-gap: 1rem; */
+  }
+
+  .cat-col {
+    display: none;
+  }
+
+  .cat-col-1 {
+    display: none;
   }
 
   .log-top {

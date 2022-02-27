@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, InputGroup, 
-  FormControl, Image,
+  FormControl,
   Col, Row
 } from 'react-bootstrap';
 import Header from '../Navbar/Header';
@@ -39,6 +39,9 @@ const images1 = [
 
 
 function HomePage() {
+  const [query, setQuery] = useState("")
+
+
   return (
     <div className="top">
         <div>
@@ -56,13 +59,18 @@ function HomePage() {
                 <InputGroup className="searchOrder">
                   <FormControl  placeholder="search for pictures" 
                      className="form-2"
+                     value={query}
+                     Fasearch={<FaSearch 
+                             onClick={event => setQuery(event.target.value)}
+                              className="search" />}
+                     
                       />
-                     <i class='fas fa-search'></i>
+                     
                </InputGroup>
             </div>
           </div>
         </div>
-        <div>
+        <div class="head-2" >
           <Header />
           <Container>
             <Row className="home-row">

@@ -6,6 +6,11 @@ import axios from "axios";
 import '../App.css';
 
 
+axios.defaults.xsrfHeaderName = 'x-csrftoken'
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.withCredentials = true
+
+
 
 
 function Signup() {
@@ -18,12 +23,12 @@ function Signup() {
         e.preventDefault();
         setError(false);
         try {
-          const res = await axios.post("/auth/register", {
+          const res = await axios.post("http://localhost:8010/proxy", {
             username,
             email,
             password,
           });
-          res.data && window.location.replace("/login");
+          res.data && window.location.replace("/localhost:3000/");
         } catch (err) {
           setError(true);
         }
@@ -49,13 +54,15 @@ function Signup() {
                <p className="logP"> OR</p>
             </div>
             <div>
-               <Form>
+               <Form noValidate  onSubmit={handleSubmit}>
                  <Form.Group className="mb-3" controlId="formBasicEmail">
                      <Form.Label>Username</Form.Label>
                      <Form.Control 
                         type="username" 
                         placeholder="Enter username" 
                         className="formCntrl"
+                        value={username}
+                        name='username'
                         onChange={(e) => {
                             setUsername(e.target.value);
                           }} 
@@ -67,6 +74,8 @@ function Signup() {
                         type="email" 
                         placeholder="Enter email" 
                         className="formCntrl"
+                        value={email}
+                        name='email'
                         onChange={(e) => {
                             setEmail(e.target.value);
                           }} 
@@ -85,6 +94,8 @@ function Signup() {
                         type="password" 
                         placeholder="Password" 
                         className="formCntrl"
+                        value={password}
+                        name="password"
                         onChange={(e) => {
                             setPassword(e.target.value);
                           }}
@@ -97,7 +108,7 @@ function Signup() {
                      <Button 
                         variant="primary" 
                         type="submit"
-                        onSubmit={handleSubmit}
+                       
                     >
                          Submit
                     </Button>

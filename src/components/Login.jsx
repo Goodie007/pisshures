@@ -18,7 +18,7 @@ function Login() {
       e.preventDefault();
       dispatch({ type: "LOGIN_START" });
       try {
-        const res = await axios.post("/auth/login", {
+        const res = await axios.post("http://127.0.0.1:8000/api/token/", {
           username: userRef.current.value,
           password: passwordRef.current.value,
         });
@@ -48,13 +48,15 @@ function Login() {
                <p className="logP"> OR</p>
             </div>
             <div>
-               <Form>
+               <Form  onSubmit={handleSubmit}>
                  <Form.Group className="mb-3" controlId="formBasicEmail">
                      <Form.Label>Email address</Form.Label>
                      <Form.Control 
                         type="email" 
                         placeholder="Enter email" 
                         className="formCntrl"
+                        // value={email}
+                        // name="name"
                         ref={userRef}
                          />
                      <Form.Text className="text-muted">
@@ -83,7 +85,7 @@ function Login() {
                         type="submit" 
                         className="loginBtn"
                         disabled={isFetching}
-                        onSubmit={handleSubmit}
+                       
                       >
                          Submit
                     </Button>

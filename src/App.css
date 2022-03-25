@@ -323,8 +323,8 @@ li a:hover {
 
 .exp-row {
   padding-top: 25px;
-  /* margin-left: -8.5%;
-  margin-right: -5%; */
+  margin-left: -8.5%;
+  margin-right: -5%;
 }
 
 .exp-img {
@@ -400,20 +400,19 @@ hr {
 
 .cat-row {
   padding-top: 25px;
-  /* margin-left: -5%;
-  margin-right: -2%; */
+  margin-left: -5%;
+  margin-right: -2%;
 }
 
 .nat-row {
   padding-top: 100px;
-  /* margin-left: -5%;
-  margin-right: -2%; */
+  margin-left: -5%;
+  margin-right: -2%;
 }
 
 .nat-row1 {
-  text-decoration: none;
-  /* margin-left: -5%;
-  margin-right: -2%; */
+  margin-left: -5%;
+  margin-right: -2%;
 }
 
 .button {
